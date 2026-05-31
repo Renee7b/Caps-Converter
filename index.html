@@ -1,102 +1,871 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Description" content="Free online case converter tool. Instantly switch text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case, and more. No data stored.">
-  <meta name="Keywords" content="case converter, text case, uppercase, lowercase, title case, camelCase, snake_case, kebab-case, text formatter">
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    body {background-color: #f6f7fa}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.2px '.SF NS'; color: #bbc6fe; -webkit-text-stroke: #bbc6fe; background-color: #241e6e}
-    p.p3 {margin: 0.0px 84.0px 0.0px 84.0px; text-align: center; text-indent: -84.0px; font: 11.4px 'Helvetica Neue'; color: #526078; -webkit-text-stroke: #526078}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #526078; -webkit-text-stroke: #526078}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #171622; -webkit-text-stroke: #171622; min-height: 15.0px}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #526078; -webkit-text-stroke: #526078}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.5px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 12.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #ffffff; -webkit-text-stroke: #ffffff}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.5px '.SF NS'; color: #526078; -webkit-text-stroke: #526078; min-height: 12.0px}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #526078; -webkit-text-stroke: #526078}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.5px '.SF NS'; color: #a80816; -webkit-text-stroke: #a80816; min-height: 12.0px}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #526078; -webkit-text-stroke: #526078; background-color: #ffffff}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.4px 'Helvetica Neue'; color: #dbe2ec; -webkit-text-stroke: #dbe2ec; background-color: #171622}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.5px '.SF NS'; color: #291b92; -webkit-text-stroke: #291b92; background-color: #eaeeff}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #526078; -webkit-text-stroke: #526078; background-color: #ffffff}
-    p.p17 {margin: 0.0px 0.0px 24.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #526078; -webkit-text-stroke: #526078}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #171622; -webkit-text-stroke: #171622; background-color: #ffffff}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #273143; -webkit-text-stroke: #273143}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #171622; -webkit-text-stroke: #171622}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.6px 'Helvetica Neue'; color: #155427; -webkit-text-stroke: #155427; background-color: #edfdf1}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.5px 'Helvetica Neue'; color: #bbc6fe; -webkit-text-stroke: #bbc6fe}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.4px 'Helvetica Neue'; color: #696a9d; -webkit-text-stroke: #696a9d}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: #f6f7fa}
-    span.s3 {font-kerning: none; background-color: #eef2f7}
-    span.s4 {font-kerning: none; background-color: #eef2ff}
-    span.s5 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #291b92; background-color: #eef2ff; -webkit-text-stroke: 0px #291b92}
-    span.s6 {font-kerning: none; background-color: #291b92}
-    span.s7 {font-kerning: none; color: #a80816; background-color: #fddadb; -webkit-text-stroke: 0px #a80816}
-    span.s8 {font: 8.6px 'Helvetica Neue'; font-kerning: none}
-    span.s9 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #171622; -webkit-text-stroke: 0px #171622}
-    span.s10 {font-kerning: none; color: #291b92; background-color: #eaeeff; -webkit-text-stroke: 0px #291b92}
-    span.s11 {font: 10.5px '.SF NS'; font-kerning: none; color: #291b92; background-color: #eaeeff; -webkit-text-stroke: 0px #291b92}
-    span.s12 {font: 9.0px 'Helvetica Neue'; font-kerning: none; color: #291b92; background-color: #eaeeff; -webkit-text-stroke: 0px #291b92}
-    span.s13 {font-kerning: none; background-color: #ffffff}
-    span.s14 {font: 9.5px 'Courier New'; font-kerning: none; color: #291b92; background-color: #eaeeff; -webkit-text-stroke: 0px #291b92}
-    span.s15 {font-kerning: none; background-color: #241e6e}
-    span.s16 {font: 12.0px 'Helvetica Neue'; font-kerning: none; color: #171622; background-color: #241e6e; -webkit-text-stroke: 0px #171622}
-    span.s17 {font: 10.5px 'Helvetica Neue'; font-kerning: none; color: #bbc6fe; -webkit-text-stroke: 0px #bbc6fe}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Convert: Switch Text Between UPPERCASE, Lowercase, Title Case, and More | AxiomApe</title>
+  <meta name="description" content="Free online case converter tool. Instantly switch text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, kebab-case, and more. No data stored." />
+  <meta name="keywords" content="case converter, text case, uppercase, lowercase, title case, camelCase, snake_case, kebab-case, text formatter" />
+  <link rel="canonical" href="https://axiomape.com/case-converter/" />
+
+  <style>
+    /* -----------------------------------------------
+       RESET & BASE
+    ----------------------------------------------- */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --primary:      #3730a3;   /* indigo-800 */
+      --primary-dark: #312e81;   /* indigo-900 */
+      --primary-light:#6366f1;   /* indigo-500 */
+      --accent:       #06b6d4;   /* cyan-500 */
+      --bg:           #f8f9fb;
+      --card:         #ffffff;
+      --border:       #e2e5f0;
+      --text:         #1e1e2e;
+      --muted:        #64748b;
+      --success:      #16a34a;
+      --shadow:       0 4px 24px rgba(55, 48, 163, 0.08);
+      --radius:       12px;
+      --font:         'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--primary-light);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* -----------------------------------------------
+       TOP NAV BAR
+    ----------------------------------------------- */
+    .top-nav {
+      background: var(--primary-dark);
+      text-align: center;
+      padding: 10px 16px;
+    }
+    .top-nav a {
+      color: #c7d2fe;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .top-nav a:hover { color: #fff; text-decoration: none; }
+
+    /* -----------------------------------------------
+       MAIN LAYOUT
+    ----------------------------------------------- */
+    main {
+      flex: 1;
+      width: 100%;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    /* -----------------------------------------------
+       PAGE HEADER
+    ----------------------------------------------- */
+    .page-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .page-header h1 {
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    .page-header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* -----------------------------------------------
+       CARD
+    ----------------------------------------------- */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+    }
+
+    /* -----------------------------------------------
+       AD PLACEHOLDER - leaderboard 728x90
+       Replace this div with your AdSense tag
+    ----------------------------------------------- */
+    .ad-slot {
+      width: 100%;
+      max-width: 728px;
+      height: 90px;
+      margin: 0 auto 28px;
+      background: #f1f5f9;
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* -----------------------------------------------
+       TEXTAREA
+    ----------------------------------------------- */
+    .textarea-wrap { position: relative; }
+
+    textarea#textInput {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      padding: 14px 16px;
+      font-family: var(--font);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: #fafbff;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    textarea#textInput:focus {
+      border-color: var(--primary-light);
+      background: #fff;
+    }
+    textarea#textInput::placeholder { color: #a0aec0; }
+
+    /* -----------------------------------------------
+       STATS BAR
+    ----------------------------------------------- */
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #f1f5ff;
+      border-radius: 8px;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+    .stats-bar span strong {
+      color: var(--primary);
+      font-size: 1rem;
+    }
+
+    /* -----------------------------------------------
+       UTILITY ROW (copy / clear / download)
+    ----------------------------------------------- */
+    .utility-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    /* -----------------------------------------------
+       BUTTONS - base
+    ----------------------------------------------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 18px;
+      font-family: var(--font);
+      font-size: 0.875rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.1s, box-shadow 0.18s;
+      white-space: nowrap;
+    }
+    .btn:active { transform: scale(0.97); }
+
+    /* primary - indigo */
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--primary-dark); box-shadow: 0 2px 10px rgba(55,48,163,0.25); }
+
+    /* secondary - light indigo outline */
+    .btn-secondary {
+      background: #eef2ff;
+      color: var(--primary);
+      border: 1.5px solid #c7d2fe;
+    }
+    .btn-secondary:hover { background: #e0e7ff; }
+
+    /* ghost - muted */
+    .btn-ghost {
+      background: #f1f5f9;
+      color: var(--muted);
+      border: 1.5px solid var(--border);
+    }
+    .btn-ghost:hover { background: #e2e8f0; color: var(--text); }
+
+    /* danger - red */
+    .btn-danger {
+      background: #fee2e2;
+      color: #b91c1c;
+      border: 1.5px solid #fecaca;
+    }
+    .btn-danger:hover { background: #fecaca; }
+
+    /* success flash state */
+    .btn-success-flash {
+      background: var(--success) !important;
+      color: #fff !important;
+      border-color: var(--success) !important;
+    }
+
+    /* -----------------------------------------------
+       CONVERSION SECTIONS
+    ----------------------------------------------- */
+    .section-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .btn-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+    }
+
+    /* -----------------------------------------------
+       TOOLTIP CHIP (explains each case on hover)
+    ----------------------------------------------- */
+    .btn-case-wrap {
+      position: relative;
+      display: inline-flex;
+    }
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: #1e1e2e;
+      color: #e2e8f0;
+      font-size: 0.78rem;
+      font-weight: 400;
+      line-height: 1.4;
+      padding: 8px 12px;
+      border-radius: 6px;
+      width: 220px;
+      text-align: center;
+      z-index: 10;
+      transition: opacity 0.15s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .tooltip::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: #1e1e2e;
+    }
+    .btn-case-wrap:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    /* -----------------------------------------------
+       GUIDE SECTION
+    ----------------------------------------------- */
+    .guide-section { margin-top: 40px; }
+    .guide-section h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+    .guide-section .guide-intro {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 24px;
+    }
+
+    /* FAQ accordion */
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      background: #fff;
+      border: none;
+      padding: 16px 20px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: background 0.15s;
+    }
+    .faq-question:hover { background: #f8f9ff; }
+    .faq-question .arrow {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      background: #eef2ff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      color: var(--primary);
+      transition: transform 0.2s;
+    }
+    .faq-item.open .arrow { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 20px 18px;
+      font-size: 0.9rem;
+      color: #334155;
+      line-height: 1.75;
+      background: #fff;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* inline code style */
+    code {
+      background: #eef2ff;
+      color: var(--primary);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 0.88em;
+      font-family: 'Courier New', monospace;
+    }
+
+    /* -----------------------------------------------
+       DISCLAIMER
+    ----------------------------------------------- */
+    .disclaimer {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 9px;
+      padding: 16px 20px;
+      font-size: 0.88rem;
+      color: #166534;
+      text-align: center;
+      margin: 32px 0 16px;
+    }
+    .disclaimer strong { font-weight: 700; }
+
+    /* -----------------------------------------------
+       FOOTER
+    ----------------------------------------------- */
+    footer {
+      background: var(--primary-dark);
+      text-align: center;
+      padding: 20px 16px;
+    }
+    footer a {
+      color: #c7d2fe;
+      font-size: 0.875rem;
+      margin: 0 12px;
+    }
+    footer a:hover { color: #fff; text-decoration: none; }
+    .footer-copy {
+      display: block;
+      margin-top: 8px;
+      font-size: 0.78rem;
+      color: #7c7fad;
+    }
+
+    /* -----------------------------------------------
+       RESPONSIVE
+    ----------------------------------------------- */
+    @media (max-width: 560px) {
+      .card { padding: 18px 14px; }
+      .btn { font-size: 0.82rem; padding: 8px 13px; }
+    }
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1"><a href="https://axiomape.com/"><b>AXIOMAPE.COM</b><b></b></a></span></p>
-<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; text-align: center; font: 25.2px '.SF NS'; color: #241e6e; -webkit-text-stroke: #241e6e"><span class="s2"><b>Case Converter</b><b></b></span></h1>
-<p class="p3"><span class="s2">Switch text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more - instantly, in your browser.</span></p>
-<p class="p4"><span class="s3">Ad Space (728 x 90)</span></p>
-<p class="p5"><span class="s1"></span><br></p>
-<p class="p6"><span class="s4">Characters: </span><span class="s5"><b>0</b><b></b></span></p>
-<p class="p6"><span class="s4">Words: </span><span class="s5"><b>0</b><b></b></span></p>
-<p class="p6"><span class="s4">Lines: </span><span class="s5"><b>0</b><b></b></span></p>
-<p class="p7"><span class="s1"><b></b></span><br></p>
-<p class="p8"><span class="s6"><b>Copy to Clipboard</b><b></b></span></p>
-<p class="p9"><span class="s1"><b></b></span><br></p>
-<p class="p10"><span class="s3"><b>Download .txt</b><b></b></span></p>
-<p class="p11"><span class="s1"><b></b></span><br></p>
-<p class="p12"><span class="s7"><b>Clear </b></span><span class="s8"><b>WRITING CASES</b></span><span class="s9"> </span><span class="s10"><b>Sentence case</b><b></b></span></p>
-<p class="p13"><span class="s1">Capitalizes the first letter of each sentence. Example: "hello world." becomes "Hello world."</span></p>
-<p class="p14"><span class="s1"><b>lower case</b><b></b></span></p>
-<p class="p13"><span class="s1">Makes every single letter lowercase. Example: "HELLO WORLD" becomes "hello world".</span></p>
-<p class="p14"><span class="s1"><b>UPPER CASE</b><b></b></span></p>
-<p class="p13"><span class="s1">Makes every single letter uppercase. Example: "hello world" becomes "HELLO WORLD".</span></p>
-<p class="p14"><span class="s1"><b>Title Case</b><b></b></span></p>
-<p class="p13"><span class="s1">Capitalizes the first letter of each major word. Articles (a, an, the) and short prepositions stay lowercase unless they are the first word. Example: "the quick brown fox" becomes "The Quick Brown Fox".</span></p>
-<p class="p14"><span class="s1"><b>aLtErNaTiNg cAsE</b><b></b></span></p>
-<p class="p13"><span class="s1">Alternates between lowercase and uppercase for each character. Example: "hello" becomes "hElLo". Often used for mocking or comedic effect online.</span></p>
-<p class="p14"><span class="s1"><b>InVeRsE CaSe</b><b></b></span></p>
-<p class="p13"><span class="s1">Flips the case of every letter - uppercase becomes lowercase, and lowercase becomes uppercase. Example: "Hello World" becomes "hELLO wORLD".</span></p>
-<p class="p15"><span class="s1"><b>PROGRAMMING CASES</b></span><span class="s9"> </span><span class="s11"><b>camelCase</b><b></b></span></p>
-<p class="p13"><span class="s1">Removes all spaces and capitalizes the first letter of every word after the first. Used in JavaScript, Java, and many languages for variable names. Example: "user first name" becomes "userFirstName".</span></p>
-<p class="p14"><span class="s1"><b>PascalCase</b><b></b></span></p>
-<p class="p13"><span class="s1">Like camelCase, but the very first word is also capitalized. Used for class and component names in most languages. Example: "user account" becomes "UserAccount".</span></p>
-<p class="p14"><span class="s1"><b>snake_case</b><b></b></span></p>
-<p class="p13"><span class="s1">Replaces all spaces with underscores and lowercases everything. Common in Python, Ruby, and SQL for variable and function names. Example: "user first name" becomes "user_first_name".</span></p>
-<p class="p14"><span class="s1"><b>SCREAMING_SNAKE</b><b></b></span></p>
-<p class="p13"><span class="s1">snake_case but fully uppercase. Used for constants in most programming languages. Example: "max retry count" becomes "MAX_RETRY_COUNT".</span></p>
-<p class="p14"><span class="s1"><b>kebab-case</b><b></b></span></p>
-<p class="p13"><span class="s1">Replaces all spaces with hyphens and lowercases everything. The standard for URLs, CSS class names, and HTML attributes. Example: "user first name" becomes "user-first-name".</span></p>
-<h2 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 18.0px '.SF NS'; color: #241e6e; -webkit-text-stroke: #241e6e"><span class="s2"><b>The Ultimate Guide to Text Cases and Formatting</b><b></b></span></h2>
-<p class="p17"><span class="s2">Everything you need to know about when and why to use each text format - for writers, developers, and everyone in between.</span></p>
-<p class="p18"><span class="s1"><b>What is the difference between Title Case and Sentence case? </b></span><span class="s12"><b>▼</b><b></b></span></p>
-<p class="p19"><span class="s13">These two cases are the most commonly confused, especially in professional writing. <b>Sentence case</b> mirrors how you would write a normal sentence: only the very first word is capitalized, along with proper nouns like names and places. For example: "The quick brown fox jumps over the lazy dog." This format is standard for body text, email subject lines, blog post body paragraphs, and most everyday writing because it is the most natural and readable format for long passages.</span></p>
-<p class="p19"><span class="s13"><b>Title Case</b>, on the other hand, capitalizes the first letter of every major word in a phrase. Minor words like articles (</span><span class="s14">a</span><span class="s13">, </span><span class="s14">an</span><span class="s13">, </span><span class="s14">the</span><span class="s13">), short prepositions (</span><span class="s14">in</span><span class="s13">, </span><span class="s14">on</span><span class="s13">, </span><span class="s14">at</span><span class="s13">), and coordinating conjunctions (</span><span class="s14">and</span><span class="s13">, </span><span class="s14">but</span><span class="s13">, </span><span class="s14">or</span><span class="s13">) are generally kept lowercase unless they appear at the very beginning. For example: "The Quick Brown Fox Jumps Over the Lazy Dog." Title Case is the standard for book titles, movie names, article headings, app names, and navigation menus. When in doubt, use Sentence case for writing and Title Case for headings.</span></p>
-<p class="p20"><span class="s13"><b>When should programmers use snake_case vs. camelCase vs. kebab-case? </b></span><span class="s12"><b>▼</b><b></b></span></p>
-<p class="p20"><span class="s13"><b>Why is standardizing text formatting important for writers and content teams? </b></span><span class="s12"><b>▼</b><b></b></span></p>
-<p class="p20"><span class="s13"><b>How does this tool protect my data privacy? </b></span><span class="s12"><b>▼</b><b></b></span></p>
-<p class="p20"><span class="s13"><b>What is aLtErNaTiNg cAsE and InVeRsE CaSe used for? </b></span><span class="s12"><b>▼</b><b></b></span></p>
-<p class="p21"><span class="s1"><b>Privacy Note:</b> This tool processes all text locally in your browser. We do not store or transmit your sensitive text or data.</span></p>
-<p class="p22"><span class="s15"><a href="https://axiomape.com/about.html">About</a></span><span class="s16"> <a href="https://axiomape.com/privacy.html"><span class="s17">Privacy</span></a> <a href="https://axiomape.com/contact.html"><span class="s17">Contact</span></a></span></p>
-<p class="p23"><span class="s15">© AxiomApe. All rights reserved.</span></p>
+
+  <!-- TOP NAV -->
+  <nav class="top-nav">
+    <a href="https://axiomape.com" title="Back to AxiomApe home">axiomape.com</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <h1>Case Convert</h1>
+      <p>Switch text between UPPERCASE, lowercase, Title Case, camelCase, snake_case, and more - instantly, in your browser.</p>
+    </header>
+
+    <!-- PRIMARY CARD -->
+    <div class="card">
+
+      <!-- AD SLOT: Replace with AdSense leaderboard (728x90) -->
+      <div class="ad-slot">
+        <!-- AdSense leaderboard 728x90 - insert code here -->
+        Ad Space (728 x 90)
+      </div>
+
+      <!-- TEXTAREA -->
+      <div class="textarea-wrap">
+        <textarea
+          id="textInput"
+          placeholder="Type or paste your text here..."
+          spellcheck="false"
+          aria-label="Text input for case conversion"
+        ></textarea>
+      </div>
+
+      <!-- STATS BAR -->
+      <div class="stats-bar" aria-live="polite">
+        <span>Characters: <strong id="charCount">0</strong></span>
+        <span>Words: <strong id="wordCount">0</strong></span>
+        <span>Lines: <strong id="lineCount">0</strong></span>
+      </div>
+
+      <!-- UTILITY BUTTONS -->
+      <div class="utility-row">
+        <button class="btn btn-primary" id="copyBtn" onclick="copyText()" title="Copy converted text to clipboard">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          Copy to Clipboard
+        </button>
+        <button class="btn btn-ghost" onclick="downloadText()" title="Download text as a .txt file">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download .txt
+        </button>
+        <button class="btn btn-danger" onclick="clearText()" title="Clear all text">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          Clear
+        </button>
+      </div>
+
+      <!-- WRITING CASES -->
+      <div class="section-label">Writing Cases</div>
+      <div class="btn-grid">
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('sentence')">Sentence case</button>
+          <div class="tooltip">Capitalizes the first letter of each sentence. Example: "hello world." becomes "Hello world."</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('lower')">lower case</button>
+          <div class="tooltip">Makes every single letter lowercase. Example: "HELLO WORLD" becomes "hello world".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('upper')">UPPER CASE</button>
+          <div class="tooltip">Makes every single letter uppercase. Example: "hello world" becomes "HELLO WORLD".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('title')">Title Case</button>
+          <div class="tooltip">Capitalizes the first letter of each major word. Articles (a, an, the) and short prepositions stay lowercase unless they are the first word. Example: "the quick brown fox" becomes "The Quick Brown Fox".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('alternating')">aLtErNaTiNg cAsE</button>
+          <div class="tooltip">Alternates between lowercase and uppercase for each character. Example: "hello" becomes "hElLo". Often used for mocking or comedic effect online.</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('inverse')">InVeRsE CaSe</button>
+          <div class="tooltip">Flips the case of every letter - uppercase becomes lowercase, and lowercase becomes uppercase. Example: "Hello World" becomes "hELLO wORLD".</div>
+        </div>
+
+      </div>
+
+      <!-- PROGRAMMING CASES -->
+      <div class="section-label">Programming Cases</div>
+      <div class="btn-grid">
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('camel')">camelCase</button>
+          <div class="tooltip">Removes all spaces and capitalizes the first letter of every word after the first. Used in JavaScript, Java, and many languages for variable names. Example: "user first name" becomes "userFirstName".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('pascal')">PascalCase</button>
+          <div class="tooltip">Like camelCase, but the very first word is also capitalized. Used for class and component names in most languages. Example: "user account" becomes "UserAccount".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('snake')">snake_case</button>
+          <div class="tooltip">Replaces all spaces with underscores and lowercases everything. Common in Python, Ruby, and SQL for variable and function names. Example: "user first name" becomes "user_first_name".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('snake_upper')">SCREAMING_SNAKE</button>
+          <div class="tooltip">snake_case but fully uppercase. Used for constants in most programming languages. Example: "max retry count" becomes "MAX_RETRY_COUNT".</div>
+        </div>
+
+        <div class="btn-case-wrap">
+          <button class="btn btn-secondary" onclick="convertCase('kebab')">kebab-case</button>
+          <div class="tooltip">Replaces all spaces with hyphens and lowercases everything. The standard for URLs, CSS class names, and HTML attributes. Example: "user first name" becomes "user-first-name".</div>
+        </div>
+
+      </div>
+      <!-- end card -->
+    </div>
+
+    <!-- GUIDE SECTION -->
+    <section class="guide-section" aria-labelledby="guide-heading">
+      <h2 id="guide-heading">The Ultimate Guide to Text Cases and Formatting</h2>
+      <p class="guide-intro">Everything you need to know about when and why to use each text format - for writers, developers, and everyone in between.</p>
+
+      <!-- FAQ 1 -->
+      <div class="faq-item open">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="true">
+          What is the difference between Title Case and Sentence case?
+          <span class="arrow">&#x25BC;</span>
+        </button>
+        <div class="faq-answer">
+          <p>These two cases are the most commonly confused, especially in professional writing. <strong>Sentence case</strong> mirrors how you would write a normal sentence: only the very first word is capitalized, along with proper nouns like names and places. For example: "The quick brown fox jumps over the lazy dog." This format is standard for body text, email subject lines, blog post body paragraphs, and most everyday writing because it is the most natural and readable format for long passages.</p>
+          <p style="margin-top:10px;"><strong>Title Case</strong>, on the other hand, capitalizes the first letter of every major word in a phrase. Minor words like articles (<code>a</code>, <code>an</code>, <code>the</code>), short prepositions (<code>in</code>, <code>on</code>, <code>at</code>), and coordinating conjunctions (<code>and</code>, <code>but</code>, <code>or</code>) are generally kept lowercase unless they appear at the very beginning. For example: "The Quick Brown Fox Jumps Over the Lazy Dog." Title Case is the standard for book titles, movie names, article headings, app names, and navigation menus. When in doubt, use Sentence case for writing and Title Case for headings.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          When should programmers use snake_case vs. camelCase vs. kebab-case?
+          <span class="arrow">&#x25BC;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Choosing the right case in programming is less about personal preference and more about following the conventions of the language or environment you are working in. Using the wrong format is not just a style issue - it can cause bugs or make your code harder to read for collaborators.</p>
+          <p style="margin-top:10px;"><strong><code>camelCase</code></strong> is the dominant convention for variable names, function names, and method names in JavaScript, Java, C#, and Swift. The first word is all lowercase, and each subsequent word begins with an uppercase letter. Example: <code>getUserById</code>, <code>totalItemCount</code>.</p>
+          <p style="margin-top:10px;"><strong><code>PascalCase</code></strong> (also called UpperCamelCase) is reserved for class names, component names (especially in React), and type definitions across almost all languages. Example: <code>UserProfile</code>, <code>ShoppingCart</code>.</p>
+          <p style="margin-top:10px;"><strong><code>snake_case</code></strong> is the standard for Python variables, function names, and database column names. It is considered very readable because the underscores clearly separate words. Example: <code>user_first_name</code>, <code>calculate_total_price</code>. The uppercase variant, <code>SCREAMING_SNAKE_CASE</code>, is universally used for constants in Python, C, and many other languages: <code>MAX_CONNECTIONS</code>, <code>API_BASE_URL</code>.</p>
+          <p style="margin-top:10px;"><strong><code>kebab-case</code></strong> is the standard format for URLs, CSS class names, HTML <code>id</code> attributes, and file names in web projects. Hyphens are treated as word separators by search engines and URL parsers, making this format SEO-friendly. Example: a CSS class like <code>.nav-menu-item</code> or a URL slug like <code>/blog/how-to-use-kebab-case</code>.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          Why is standardizing text formatting important for writers and content teams?
+          <span class="arrow">&#x25BC;</span>
+        </button>
+        <div class="faq-answer">
+          <p>Consistent text formatting is a cornerstone of professional credibility. When a reader encounters inconsistent capitalization across a website, document, or presentation, it creates a subconscious sense of disorder that erodes trust in the content itself. Style guides from major publishers, universities, and tech companies like Google and Apple dedicate significant sections to exactly this topic for a good reason: consistency signals that a document was produced with care and intention.</p>
+          <p style="margin-top:10px;">For SEO purposes, inconsistent formatting of headings and titles can weaken how search engines parse and rank your content. Search algorithms read heading tags (<code>h1</code>, <code>h2</code>, etc.) and title attributes to understand the structure and topic of a page. A title in Sentence case signals a clear, readable heading, while random mixed-case text can appear spammy or untrustworthy to automated ranking systems.</p>
+          <p style="margin-top:10px;">For content teams working in a collaborative environment, using a standardized case converter tool eliminates manual errors when reformatting content copied from emails, customer feedback forms, spreadsheets, or third-party data sources. Automating this step with a tool like this one reduces editing cycles and keeps your style guide enforced without extra effort.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          How does this tool protect my data privacy?
+          <span class="arrow">&#x25BC;</span>
+        </button>
+        <div class="faq-answer">
+          <p>This case converter processes every single conversion entirely within your web browser using client-side JavaScript. When you type or paste text into the input box and click a conversion button, the transformation happens on your device in real time - no text is ever sent to any server, no data is logged, and no network request is made.</p>
+          <p style="margin-top:10px;">This design is intentional. Many users need to convert sensitive text: legal contract language, private communications, confidential business data, API keys, and more. A server-based tool would require transmitting that text across the internet, creating a potential point of exposure. Because this tool has no backend, there is simply no data pathway for that exposure to occur.</p>
+          <p style="margin-top:10px;">You can verify this yourself: open your browser's Developer Tools (usually by pressing <code>F12</code>), click on the Network tab, and watch it while you convert text. You will see zero outbound requests related to your input. Your text is private, and it stays that way.</p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false">
+          What is aLtErNaTiNg cAsE and InVeRsE CaSe used for?
+          <span class="arrow">&#x25BC;</span>
+        </button>
+        <div class="faq-answer">
+          <p><strong>Alternating case</strong> cycles between lowercase and uppercase for each letter in sequence, producing text that looks like: <code>hElLo WoRlD</code>. While it has no practical use in professional writing or programming, it became a popular internet convention - particularly on social media and forums - to express mockery, sarcasm, or comedic emphasis. The format is directly associated with the "mocking SpongeBob" meme that spread widely in the mid-2010s. It is also sometimes used in creative branding or decorative typography to give text a playful, erratic visual energy.</p>
+          <p style="margin-top:10px;"><strong>Inverse case</strong> (also called toggle case) simply flips every letter: lowercase characters become uppercase and uppercase characters become lowercase. Example: <code>Hello, World!</code> becomes <code>hELLO, wORLD!</code>. This can be useful as a quick visual trick to highlight that a piece of text was manually edited, as a simple form of light obfuscation for non-sensitive text, or as a creative design element. Some writers use it as a quick check to identify which letters in a mixed document are already capitalized - inverting the text makes the pattern immediately visible.</p>
+        </div>
+      </div>
+
+    </section>
+    <!-- end guide section -->
+
+    <!-- DISCLAIMER -->
+    <div class="disclaimer">
+      <strong>Privacy Note:</strong> This tool processes all text locally in your browser. We do not store or transmit your sensitive text or data.
+    </div>
+
+  </main>
+  <!-- end main -->
+
+  <!-- FOOTER -->
+  <footer>
+    <nav aria-label="Footer navigation">
+      <a href="https://axiomape.com/about.html">About</a>
+      <a href="https://axiomape.com/privacy.html">Privacy</a>
+      <a href="https://axiomape.com/contact.html">Contact</a>
+    </nav>
+    <span class="footer-copy">&copy; <span id="footerYear"></span> AxiomApe. All rights reserved.</span>
+  </footer>
+
+  <!-- ================================================
+       JAVASCRIPT
+  ================================================ -->
+  <script>
+    // -- Footer year --
+    document.getElementById('footerYear').textContent = new Date().getFullYear();
+
+    // -- Textarea reference --
+    const textInput = document.getElementById('textInput');
+
+    // -----------------------------------------------
+    // STATS: update character / word / line counts
+    // -----------------------------------------------
+    function updateStats() {
+      const val = textInput.value;
+      document.getElementById('charCount').textContent = val.length;
+
+      const words = val.trim() === '' ? 0 : val.trim().split(/\s+/).length;
+      document.getElementById('wordCount').textContent = words;
+
+      const lines = val === '' ? 0 : val.split('\n').length;
+      document.getElementById('lineCount').textContent = lines;
+    }
+
+    textInput.addEventListener('input', updateStats);
+    updateStats(); // run once on load
+
+    // -----------------------------------------------
+    // CASE CONVERSION ENGINE
+    // -----------------------------------------------
+
+    // Words that stay lowercase in Title Case unless first word.
+    const MINOR_WORDS = new Set([
+      'a','an','the','and','but','or','nor','for','so','yet',
+      'at','by','in','of','on','to','up','as','is','it'
+    ]);
+
+    function convertCase(type) {
+      const original = textInput.value;
+      if (original === '') return;
+
+      let result = '';
+
+      switch (type) {
+
+        // Sentence case: capitalize first letter after . ! ?
+        case 'sentence':
+          result = original.toLowerCase().replace(
+            /(^\s*\w|[.!?]\s+\w)/g,
+            char => char.toUpperCase()
+          );
+          break;
+
+        case 'lower':
+          result = original.toLowerCase();
+          break;
+
+        case 'upper':
+          result = original.toUpperCase();
+          break;
+
+        // Title Case: capitalize major words, skip minor words mid-sentence
+        case 'title':
+          result = original.toLowerCase().replace(
+            /\b\w+/g,
+            (word, offset) => {
+              if (offset === 0 || !MINOR_WORDS.has(word)) {
+                return word.charAt(0).toUpperCase() + word.slice(1);
+              }
+              return word;
+            }
+          );
+          break;
+
+        // aLtErNaTiNg: alternate lower and upper per letter
+        case 'alternating':
+          let altIndex = 0;
+          result = original.split('').map(char => {
+            if (char.match(/[a-zA-Z]/)) {
+              const converted = altIndex % 2 === 0
+                ? char.toLowerCase()
+                : char.toUpperCase();
+              altIndex++;
+              return converted;
+            }
+            return char;
+          }).join('');
+          break;
+
+        // InVeRsE: flip each letter's case
+        case 'inverse':
+          result = original.split('').map(char => {
+            if (char === char.toUpperCase()) return char.toLowerCase();
+            return char.toUpperCase();
+          }).join('');
+          break;
+
+        // camelCase: strip spaces, capitalize each word except first
+        case 'camel':
+          result = original
+            .toLowerCase()
+            .replace(/[^a-zA-Z0-9\s]/g, '')
+            .trim()
+            .split(/\s+/)
+            .map((word, i) => i === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1))
+            .join('');
+          break;
+
+        // PascalCase: like camelCase but first word is also capitalized
+        case 'pascal':
+          result = original
+            .toLowerCase()
+            .replace(/[^a-zA-Z0-9\s]/g, '')
+            .trim()
+            .split(/\s+/)
+            .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+            .join('');
+          break;
+
+        // snake_case: spaces become underscores, all lowercase
+        case 'snake':
+          result = original
+            .toLowerCase()
+            .replace(/\s+/g, '_')
+            .replace(/[^a-z0-9_]/g, '');
+          break;
+
+        // SCREAMING_SNAKE_CASE: snake but uppercase
+        case 'snake_upper':
+          result = original
+            .toUpperCase()
+            .replace(/\s+/g, '_')
+            .replace(/[^A-Z0-9_]/g, '');
+          break;
+
+        // kebab-case: spaces become hyphens, all lowercase
+        case 'kebab':
+          result = original
+            .toLowerCase()
+            .replace(/\s+/g, '-')
+            .replace(/[^a-z0-9-]/g, '');
+          break;
+
+        default:
+          result = original;
+      }
+
+      textInput.value = result;
+      updateStats();
+    }
+
+    // -----------------------------------------------
+    // COPY TO CLIPBOARD
+    // -----------------------------------------------
+    function copyText() {
+      const btn = document.getElementById('copyBtn');
+      const text = textInput.value;
+
+      if (!text) return;
+
+      navigator.clipboard.writeText(text).then(() => {
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = `
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          Copied!
+        `;
+        btn.classList.add('btn-success-flash');
+        setTimeout(() => {
+          btn.innerHTML = originalHTML;
+          btn.classList.remove('btn-success-flash');
+        }, 1800);
+      }).catch(() => {
+        // Fallback for older browsers
+        textInput.select();
+        document.execCommand('copy');
+      });
+    }
+
+    // -----------------------------------------------
+    // DOWNLOAD AS .TXT
+    // -----------------------------------------------
+    function downloadText() {
+      const text = textInput.value;
+      if (!text) return;
+
+      const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = 'converted-text.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    // -----------------------------------------------
+    // CLEAR TEXT
+    // -----------------------------------------------
+    function clearText() {
+      textInput.value = '';
+      updateStats();
+      textInput.focus();
+    }
+
+    // -----------------------------------------------
+    // FAQ ACCORDION
+    // -----------------------------------------------
+    function toggleFaq(btn) {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    }
+
+  </script>
 </body>
 </html>
